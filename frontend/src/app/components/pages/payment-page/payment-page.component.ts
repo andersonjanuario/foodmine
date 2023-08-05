@@ -18,7 +18,7 @@ export class PaymentPageComponent implements OnInit {
         this.order = order;
       },
       error:() => {
-        router.navigateByUrl('/chekcout');
+        router.navigateByUrl('/checkout');
       }
     })
   }
