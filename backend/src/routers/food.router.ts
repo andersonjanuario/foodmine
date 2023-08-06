@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { sample_foods, sample_foods_not_id, sample_tags } from "../data";
+import { sample_foods } from "../data";
 import asyncHandler from 'express-async-handler';
 import { FoodModel } from "../models/food.model";
 
@@ -12,7 +12,7 @@ router.get("/seed", asyncHandler(
             res.send("Seed is already done!");
             return;
         }
-        await FoodModel.create(sample_foods_not_id);
+        await FoodModel.create(sample_foods);
         res.send("Seed is Done!");
     }   
 ))
