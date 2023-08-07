@@ -28,7 +28,7 @@ router.post("/login", asyncHandler(
         if(user && (await bcrypt.compare(password,user.password))) {
             res.send(generateTokenResponse(user));
         }else{
-            res.status(HTTP_BAD_REQUEST).send("User name or password is not valid!");
+            res.status(HTTP_BAD_REQUEST).send("O nome de usuário ou a senha não são válidos!");
         }
     }
 ));
@@ -39,7 +39,7 @@ router.post('/register', asyncHandler(
     const user = await UserModel.findOne({email});
     if(user){
       res.status(HTTP_BAD_REQUEST)
-        .send('User is already exist, please login!');
+        .send('O usuário já existe, faça o login!');
       return;
     }
 

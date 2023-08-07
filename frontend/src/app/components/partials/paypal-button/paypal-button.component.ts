@@ -51,19 +51,19 @@ export class PaypalButtonComponent implements OnInit {
               this.cartService.clearCart();
               this.router.navigateByUrl('/track/' + orderId);
               this.toastrService.success(
-                'Payment Saved Successfully',
-                'Success'
+                'Pagamento Salvo com Sucesso',
+                'Sucesso'
               );
             },
             error: (error) => {
-              this.toastrService.error('Payment Save Failed', 'Error');
+              this.toastrService.error('Falha ao Salvar o Pagamento', 'Erro');
             }
           }
         );
       },
 
       onError: (err: any) => {
-        this.toastrService.error('Payment Failed', 'Error');
+        this.toastrService.error('Pagamento Falhou', 'Erro');
         console.log(err);
       },
     })

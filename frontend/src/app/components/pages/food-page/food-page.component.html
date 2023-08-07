@@ -1,7 +1,7 @@
 <app-not-found
     [visible]="!food"
-    notFoundMessage="Food Not Found"
-    resetLinkText="Back To Homepage">
+    notFoundMessage="Comida Não Encontrada"
+    resetLinkText="Voltar à Página Inicial">
 </app-not-found>
 
 <div *ngIf="food" class="container">
@@ -33,7 +33,7 @@
 
         <div class="cook-time">
             <span>
-                Time to cook about <strong>{{food.cookTime}}</strong> minutes
+                Tempo de Preparo de <strong>{{food.cookTime}}</strong> minutos
             </span>
         </div>
 
@@ -43,6 +43,6 @@
             </span>
         </div>
 
-        <button (click)="addToCart()">Add To Cart</button>
+        <button (click)="addToCart()">Adicionar ao Carrinho</button>
     </div>
 </div>

@@ -13,7 +13,7 @@ router.post('/create', asyncHandler(
         const requestOrder = req.body;
 
         if (requestOrder.items.length <= 0) {
-            res.status(HTTP_BAD_REQUEST).send('Cart Is Empty!');
+            res.status(HTTP_BAD_REQUEST).send('Carrinho Está Vazio!');
             return;
         }
 
@@ -44,7 +44,7 @@ router.post('/pay', asyncHandler(
         const {paymentId} = req.body;
         const order = await getNewOrderForCurrentUser(req);
         if (!order) {
-            res.status(HTTP_BAD_REQUEST).send('Order Not Found!');
+            res.status(HTTP_BAD_REQUEST).send('Pedido Não Encontrado!');
             return;
         }
 

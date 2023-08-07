@@ -13,7 +13,10 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     credentials:true,
-    origin:["https://farmaquiz.onrender.com"]
+    //Endereço Render
+    origin:["https://foodmine.onrender.com"]
+    //Endereço Local
+    //origin:["http://localhost:4200"]
 }));
 
 app.use("/api/foods", foodRouter);
@@ -27,5 +30,5 @@ app.get('*', (req, res) => {
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-    console.log("Website served on http://localhost:" + port);
+    console.log("Website disponível em http://localhost:" + port);
 });

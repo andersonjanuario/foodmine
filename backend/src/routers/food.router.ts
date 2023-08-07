@@ -54,7 +54,7 @@ router.get("/tags", asyncHandler(
         ]).sort({count: -1});
 
         const all = {
-            name: 'All',
+            name: 'Todas',
             count: await FoodModel.countDocuments()
         }
 

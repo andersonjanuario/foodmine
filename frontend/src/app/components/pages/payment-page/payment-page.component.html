@@ -1,20 +1,20 @@
 <div class="container">
     <div class="content">
-        <app-title title="Order Summary" fontSize="1.6rem"></app-title>
+        <app-title title="Resumo do Pedido" fontSize="1.6rem"></app-title>
         <div class="summary">
             <div>
-                <h3>Name:</h3>
+                <h3>Nome:</h3>
                 <span>{{order.name}}</span>
             </div>
             <div>
-                <h3>Address:</h3>
+                <h3>Endereço:</h3>
                 <span>{{order.address}}</span>
             </div>
         </div>
         <order-items-list [order]="order"></order-items-list>
     </div>
     <div>
-        <app-title title="Shipping Address" fontSize="1.6rem"></app-title>
+        <app-title title="Endereço Para Envio" fontSize="1.6rem"></app-title>
         <map [order]="order" [readonly]="true"></map>
     </div>
     <div class="buttons-container">
