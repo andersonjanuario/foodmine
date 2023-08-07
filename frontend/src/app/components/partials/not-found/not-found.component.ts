@@ -11,10 +11,10 @@ export class NotFoundComponent implements OnInit {
   visible = false;
 
   @Input()
-  notFoundMessage = "Nothing Found!";
+  notFoundMessage = "Nada encontrado!";
 
   @Input()
-  resetLinkText = "Reset";
+  resetLinkText = "Reiniciar";
 
   @Input()
   resetLinkRoute = "/";
