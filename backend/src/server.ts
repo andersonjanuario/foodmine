@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors({
     credentials:true,
     //Endereço Render
-    origin:["https://foodmine.onrender.com"]
+    origin:["https://foodmine-7ynq.onrender.com"]
     
     //Endereço Local
     //origin:["http://localhost:4200"]
