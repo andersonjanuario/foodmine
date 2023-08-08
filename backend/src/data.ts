@@ -82,14 +82,14 @@ export const sample_foods: any[] = [
     {
       name: "John Doe",
       email: "john@gmail.com",
-      password: "12345",
+      password: "$2a$10$HuLF0htfFg6nXx4EaQbxTecp4543y2N2UgZZ6PJCHN9h..yuQf1iq",
       address: "Toronto On",
       isAdmin: true,
     },
     {
       name: "Jane Doe",
       email: "jane@gmail.com",
-      password: "12345",
+      password: "$2a$10$HuLF0htfFg6nXx4EaQbxTecp4543y2N2UgZZ6PJCHN9h..yuQf1iq",
       address: "Shanghai",
       isAdmin: false,
     },
