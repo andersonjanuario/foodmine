@@ -22,8 +22,20 @@ Nele será possível:<br>
 
 2. Configurar variáveis locais: <br>
   2.1 Crie o arquivo *.env* dentro da pasta *backend/src* <br>
-  2.2 
- 
+  2.2 Adicione as seguintes variáveis dentro do *.env*:
+    ```
+    //Para conectar ao MONGODB local
+    MONGO_URI=mongodb://localhost:27017
+    
+    ou
+    
+    //Para conectar ao MONGODB Atlas - BD online
+    MONGO_URI=mongodb+srv://*usuario*:*senha*@cluster0.liennlq.mongodb.net/nomeBanco?retryWrites=true&w=majority
+    ```
+    e<br>
+    ```
+    JWT_SECRET="UmTextoQualquer"
+    ```
 
 3. Acessar a pasta foodmine <br>
 3.1 *Frontend* <br>
