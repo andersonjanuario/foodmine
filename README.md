@@ -56,6 +56,7 @@ Nele será possível:<br>
     ```
     npm start
     ```
+    
 <br>
     
 4. Tudo dando certo o Website estará disponível no edereço => http://localhost:4200
