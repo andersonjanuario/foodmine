@@ -38,26 +38,26 @@ Nele será possível:<br>
     ```
 
 3. Acessar a pasta foodmine <br>
-3.1 *Frontend* <br>
-3.1.1 Abrir um terminal e rodar os seguintes comandos: <br>
-```
-cd frontend
-```
-```
-npm install --force
-```
-```
-npm start
-```
-3.2 *Backend* <br>
-3.2.1 Abrir um novo terminal e rodar os seguintes comandos: <br>
-```
-cd backend
-```
-```
-npm install
-```
-```
-npm start
-```
+  3.1 *Frontend* <br>
+    Abrir um terminal e rodar os seguintes comandos: <br>
+    ```
+    cd frontend
+    ```
+    ```
+    npm install --force
+    ```
+    ```
+    npm start
+    ```
+  3.2 *Backend* <br>
+    Abrir um novo terminal e rodar os seguintes comandos: <br>
+    ```
+    cd backend
+    ```
+    ```
+    npm install
+    ```
+    ```
+    npm start
+    ```
 4. Tudo dando certo o Website estará disponível no edereço => http://localhost:4200
