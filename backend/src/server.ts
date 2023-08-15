@@ -14,10 +14,10 @@ app.use(express.json());
 app.use(cors({
     credentials:true,
     //Endereço Render
-    origin:["https://foodmine-7ynq.onrender.com"]
+    //origin:["https://foodmine-7ynq.onrender.com"]
     
     //Endereço Local
-    //origin:["http://localhost:4200"]
+    origin:["http://localhost:4200"]
 }));
 
 app.use("/api/foods", foodRouter);
